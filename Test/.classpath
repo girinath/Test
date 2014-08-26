@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/jre8"/>
+	<classpathentry kind="lib" path="G:/Giri/workspace/Test/lib/jxl.jar"/>
+	<classpathentry kind="lib" path="G:/Giri/workspace/Test/lib/selenium-java-2.41.0.jar"/>
+	<classpathentry kind="lib" path="G:/Giri/workspace/Test/lib/selenium-server-standalone-2.41.0.jar"/>
+	<classpathentry kind="lib" path="G:/Giri/workspace/Test/lib/org.testng.eclipse_6.8.6.20141201_2240.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
