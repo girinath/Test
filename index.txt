@@ -1,0 +1,114 @@
+<%@page language="java" contentType="text/html; charset=ISO-8859-1"
+	pageEncoding="ISO-8859-1"%>
+<%-- 	<%@page import="com.giri.pkg.*"%> --%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<style>
+#myProgress {
+	width: 100%;
+	background-color: #ddd;
+}
+
+#myBar {
+	width: 1%;
+	height: 30px;
+	background-color: #4CAF50;
+}
+</style>
+
+	<h1>Welcome to my page</h1>
+	<hr />
+
+	<form action="MyServlet">
+		<input onclick="move()" type="submit" value="Get Automation Results" />
+		</br>
+	</form>
+
+	<div id="myProgress">
+		<div id="myBar"></div>
+	</div>
+	<!-- 	<button onclick="move()">Click Me</button> -->
+	
+
+
+
+	<!-- 	<form action="HelloForm"> -->
+	<!-- 		Name:<input type="text" name="first_name" /><br /> <br /> lastname:<input -->
+	<!-- 			type="text" name="last_name" /><br /> <input type="submit" -->
+	<!-- 			value="send" /> -->
+	<!-- 	</form> -->
+
+
+	<!-- 	<form action="Register" method="post"> -->
+
+	<!-- 		Name:<input type="text" name="userName" /><br /> <br /> Password:<input -->
+	<!-- 			type="password" name="userPass" /><br /> <br /> Email Id:<input -->
+	<!-- 			type="text" name="userEmail" /><br /> <br /> Country: <select -->
+	<!-- 			name="userCountry"> -->
+	<!-- 			<option>India</option> -->
+	<!-- 			<option>Pakistan</option> -->
+	<!-- 			<option>other</option> -->
+	<!-- 		</select> <br /> <br /> <input type="submit" value="register" /> -->
+
+	<!-- 	</form> -->
+
+
+	<!-- 	<table id="messages" border="1"> -->
+	<!-- 		<tr> -->
+	<!-- 			<th>Message</th> -->
+	<!-- 			<th>Type</th> -->
+	<!-- 		</tr> -->
+
+	<!--  		<c:forEach var="msg" items="${requestScope.messageList}"> -->
+	<!-- 			<tr> -->
+	<!-- 				<td>${msg[0]}</td> --%>
+	<!-- 				<td>${msg[1]}</td> --%>
+	<!-- 			</tr> -->
+	<!-- 		</c:forEach> -->
+	<!--	</table> -->
+</body>
+
+<script type="text/javascript">
+	
+
+// 	function build() {
+<%-- 		<% --%>
+// 		SleepClass sl = new SleepClass();;//Creating class Object
+// 		sl.waitForSome();//Calling add Method
+<%-- 		%> --%>
+		
+// // 		MyServlet servlet = new MyServlet();
+// // 		servlet.doget();
+// 	}
+	
+		function move() {
+			var elem = document.getElementById("myBar");
+			var width = 1;
+			var id = setInterval(frame, 10);
+			function frame() {
+
+				if (width >= 100) {
+					clearInterval(id);
+				} else {
+					width++;
+					elem.style.width = width + '%';
+				}
+			}
+		}
+
+		// var refreshprogessbar = setInterval(checkProgress, 10000);// 10 seconds
+		// function checkProgress() {/*pass the actual id instead of 12345*/
+		//     $.getJSON('progressServlet?downloadId=12345', function(progress) {
+		//         if(progress == 100){clearInterval(refreshprogessbar);}
+		//         setProgress(progress);
+		//     });
+		// }
+		
+		
+	</script>
+</html>
