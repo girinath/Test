@@ -36,9 +36,9 @@ public class MyServlet extends HttpServlet {
 		out.print("giri");
 		
 		 String[][] messages = {
-		           {"mplatform", "100","87","13","87"},
-		           {"SAO", "55","87","17","67"},
-		           {"Lombard", "65","55","13","78"},
+		           {"test123", "100","87","13","87"},
+		           {"test456", "55","87","17","67"},
+		           {"test789", "65","55","13","78"},
 		       };
 
 		       request.setAttribute("messageList", messages);
